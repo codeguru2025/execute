@@ -36,13 +36,22 @@ Preferred communication style: Simple, everyday language.
 ### Project Structure
 ```
 ├── client/src/          # React frontend
-│   ├── components/      # UI components (shadcn/ui + custom)
-│   ├── pages/           # Route pages
-│   ├── hooks/           # Custom React hooks
+│   ├── components/      
+│   │   ├── layout/      # Navbar, Footer, Layout wrapper
+│   │   └── ui/          # shadcn/ui + AnimatedSection component
+│   ├── pages/           
+│   │   ├── Home.tsx           # Landing page with hero and pillar sections
+│   │   ├── About.tsx          # Company story and mission
+│   │   ├── Divisions.tsx      # Overview of all three divisions
+│   │   ├── TechnologyGrowth.tsx  # Tech & Growth division details
+│   │   ├── EventsTravel.tsx   # Events & Travel division details
+│   │   ├── Beverage.tsx       # Execute Beverage division details
+│   │   └── Contact.tsx        # Contact form with API integration
+│   ├── hooks/           # Custom hooks (use-toast, use-seo)
 │   └── lib/             # Utilities and query client
 ├── server/              # Express backend
-│   ├── routes.ts        # API route definitions
-│   ├── storage.ts       # Data access layer
+│   ├── routes.ts        # API route definitions (POST /api/contact)
+│   ├── storage.ts       # In-memory data storage
 │   └── vite.ts          # Vite dev server integration
 ├── shared/              # Shared code (schema, types)
 └── migrations/          # Drizzle database migrations
