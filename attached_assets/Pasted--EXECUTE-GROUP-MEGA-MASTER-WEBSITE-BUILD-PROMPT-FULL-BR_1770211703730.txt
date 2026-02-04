@@ -1,0 +1,414 @@
+# EXECUTE GROUP — MEGA MASTER WEBSITE BUILD PROMPT
+
+# (FULL BRAND + PRODUCT + ENGINEERING SPECIFICATION)
+
+You are acting as:
+
+• Senior Product Designer
+• Brand Strategist
+• Creative Director
+• UX Architect
+• Senior Full-Stack Engineer
+
+Your job is to design and build a WORLD-CLASS corporate website for Execute Group.
+
+This is NOT a landing page.
+This is NOT a startup site.
+This is NOT an agency template.
+
+This must feel like:
+
+Apple • Tesla • Stripe • SpaceX • Notion
+
+Institutional.
+Premium.
+Global.
+Minimal.
+Confident.
+
+============================================================
+SECTION 1 — CORE IDENTITY
+=========================
+
+Company Name:
+Execute Group
+
+Tagline:
+Built to Execute.
+
+Positioning Statement:
+Execute Group is a Dubai-registered business enablement platform helping individuals and companies launch, move, and scale between Africa and the UAE.
+
+We enable:
+• business creation
+• business growth
+• cross-border mobility
+• premium experiences
+
+We combine:
+Technology + Business Systems + Travel + Events + Lifestyle Brands
+
+We are NOT a services company.
+We are a platform company.
+
+Language must reflect:
+Authority, not hustle.
+
+============================================================
+SECTION 2 — FOUNDERS (GROUP LEVEL ONLY)
+=======================================
+
+Founders:
+• Brighton Sibanda
+• Handsome Sibanda
+• Augustus Siziba
+
+CRITICAL RULE:
+Founders appear ONLY on the About page.
+
+Never attach founders to divisions.
+
+Divisions must feel institutional, not personal.
+
+============================================================
+SECTION 3 — OFFICIAL ADDRESS
+============================
+
+Office No: BC-889841
+26th Floor, Amber Gem Tower
+Sheikh Khalifa Street, Ajman, UAE
+
+============================================================
+SECTION 4 — BRAND PSYCHOLOGY (VERY IMPORTANT)
+=============================================
+
+The brand must communicate:
+
+• precision
+• discipline
+• reliability
+• global competence
+• quiet confidence
+• premium simplicity
+
+Visitors should feel:
+“These people execute. No noise. Just results.”
+
+Avoid:
+• hype
+• buzzwords
+• emojis
+• loud marketing copy
+• salesy language
+
+Tone:
+Executive. Calm. Direct. Intelligent.
+
+Short sentences.
+Few words.
+Strong meaning.
+
+============================================================
+SECTION 5 — DESIGN PHILOSOPHY
+=============================
+
+Style principles:
+
+• ultra minimal
+• lots of whitespace
+• typography led
+• large headlines
+• short copy
+• structured layouts
+• motion for elegance only
+• zero clutter
+
+No:
+• gradients
+• bright colors
+• stock-looking layouts
+• busy hero sections
+• decorative graphics
+
+Only:
+• layout
+• spacing
+• typography
+• subtle animation
+
+============================================================
+SECTION 6 — OFFICIAL COLOR SYSTEM (MATCH LOGO)
+==============================================
+
+Use ONLY these colors:
+
+Background Black: #0F0F0F
+Panel Black: #141414
+Text White: #FFFFFF
+Muted Gray: #BDBDBD
+Execute Green Accent: #8FAF9B
+
+Rules:
+
+• 95% monochrome
+• green only as accent
+• links
+• small highlights
+• hover states
+• thin lines
+• never large blocks
+• never colorful UI
+
+Green = signature, not decoration
+
+============================================================
+SECTION 7 — TYPOGRAPHY
+======================
+
+Font:
+Inter or system sans-serif
+
+Hierarchy:
+
+H1 — very large bold
+H2 — large
+H3 — medium
+Body — small and clean
+
+Rules:
+
+• short paragraphs
+• minimal density
+• high contrast
+• premium spacing
+
+============================================================
+SECTION 8 — BUSINESS ARCHITECTURE (STRICT PILLARS)
+==================================================
+
+Execute Group has THREE pillars.
+
+Each service MUST belong to ONE pillar only.
+
+No overlaps.
+
+---
+
+DIVISION 1 — TECHNOLOGY & GROWTH
+PILLAR: BUILD BUSINESSES
+------------------------
+
+Purpose:
+Design, digitize, optimize, and scale businesses.
+
+Services:
+
+DIGITAL BUILD
+• websites
+• mobile apps
+• e-commerce
+• dashboards
+• internal tools
+• automations
+• CRM systems
+• AI integrations
+• system architecture
+
+REVENUE SYSTEMS
+• funnels
+• acquisition systems
+• marketing strategy
+• analytics
+• growth optimization
+
+TRAINING
+• sales training
+• marketing training
+• team building
+• leadership workshops
+• seminars
+• coaching
+
+BUSINESS ENABLEMENT
+• Dubai company formation
+• registration support
+• operational audits
+• process design
+• restructuring
+• HR consultancy
+• talent sourcing
+• compliance advisory
+
+Anything that helps a company OPERATE or SCALE belongs here.
+
+---
+
+DIVISION 2 — EVENTS, TRAVEL & TOURISM
+PILLAR: MOVE PEOPLE
+-------------------
+
+Purpose:
+Facilitate travel, logistics, and physical experiences.
+
+Events:
+• conferences
+• exhibitions
+• brand activations
+• corporate events
+• logistics
+
+Travel Africa → Dubai:
+• visas
+• documentation
+• flights
+• compliance
+• group coordination
+
+Travel Dubai → Africa:
+• tours
+• cultural experiences
+• partnerships
+• itineraries
+
+Local Dubai:
+• hospitality experiences
+• guided tours
+
+Anything involving PEOPLE + MOVEMENT belongs here.
+
+---
+
+DIVISION 3 — EXECUTE BEVERAGE
+PILLAR: LIFESTYLE PRODUCTS
+--------------------------
+
+Brand:
+Execute Beverage
+
+Tagline:
+Crafted Clarity in Every Sip.
+
+Offerings:
+• matcha
+• mocktails
+• juices
+• bubble tea
+• bottled drinks
+• popups
+• cloud kitchen
+• events supply
+• office supply
+
+Include:
+All 15 signature drinks exactly.
+
+This page feels like a lifestyle product brand, not consulting.
+
+============================================================
+SECTION 9 — SITE MAP
+====================
+
+/
+/about
+/divisions
+/technology-growth
+/events-travel
+/beverage
+/contact
+
+============================================================
+SECTION 10 — PAGE WIREFRAMES
+============================
+
+HOME
+• hero statement
+• what we enable
+• 3 pillars
+• africa ↔ dubai bridge
+• CTA
+• footer
+
+ABOUT
+• story
+• mission
+• vision
+• founders
+• address
+
+DIVISION PAGES
+• hero
+• services grid
+• approach
+• CTA
+
+BEVERAGE
+• brand hero
+• story
+• USP
+• 15 drink grid
+• operations
+• partnership
+• contact
+
+============================================================
+SECTION 11 — ANIMATION SYSTEM
+=============================
+
+Framer Motion only:
+
+• fade in
+• slide up
+• scroll reveal
+• soft hover
+• smooth transitions
+
+No flashy effects.
+
+============================================================
+SECTION 12 — ENGINEERING REQUIREMENTS
+=====================================
+
+Use:
+
+Next.js App Router
+TypeScript
+Tailwind
+Framer Motion
+
+Must include:
+
+• reusable components
+• layout system
+• navbar
+• footer
+• SEO metadata
+• mobile first
+• accessibility
+• scalable architecture
+
+============================================================
+SECTION 13 — FOLDER STRUCTURE
+=============================
+
+app/
+components/
+sections/
+lib/
+styles/
+public/
+
+Clean separation.
+
+============================================================
+SECTION 14 — OUTPUT INSTRUCTIONS
+================================
+
+1. Generate full project structure
+2. Build Home page first
+3. Then all pages
+4. Create reusable components
+5. Comment code
+6. Make production ready
+7. Keep code elegant and minimal
+
+Begin implementation now.
