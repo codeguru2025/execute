@@ -58,10 +58,20 @@ Preferred communication style: Simple, everyday language.
 ```
 
 ### Design System
-- Dark theme with sage green accent (#8FAF9B / HSL 143 12% 62%)
+- Dark theme with gold/copper accent (#D4A84B) for Dubai luxury aesthetic
 - Inter font family
-- Minimal, high-contrast design with subtle animations
+- Premium, high-contrast design with subtle animations
+- Netflix-style prominent logo (h-16 md:h-20)
+- Full-bleed hero images with gradient overlays
 - CSS variables for consistent theming across components
+
+### Stock Images
+Located in `client/src/assets/images/`:
+- `dubai-skyline.jpg` - Home page hero background
+- `dubai-business.jpg` - Technology & Growth hero
+- `travel-luxury.jpg` - Events & Travel hero
+- `beverage-premium.jpg` - Beverage hero
+- `dubai-luxury.jpg` - About page hero
 
 ## External Dependencies
 
