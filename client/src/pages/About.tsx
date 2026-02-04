@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { useSEO } from "@/hooks/use-seo";
 import { MapPin, Target, Eye, Users } from "lucide-react";
+import dubaiLuxury from "../assets/images/dubai-luxury.jpg";
 
 const founders = [
   {
@@ -44,17 +45,23 @@ export default function About() {
 
   return (
     <Layout>
-      <section className="py-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="min-h-[60vh] flex items-end relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${dubaiLuxury})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-black/70 to-black/40" />
+        
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-20 relative z-10">
           <AnimatedSection className="max-w-3xl">
-            <p className="text-[#8FAF9B] text-sm tracking-[0.2em] uppercase mb-6">
+            <span className="inline-block px-4 py-2 bg-[#D4A84B]/20 border border-[#D4A84B]/40 rounded-full text-[#D4A84B] text-sm font-medium tracking-wide mb-6">
               About Execute Group
-            </p>
+            </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-8">
               We don't just consult.<br />
-              We execute.
+              <span className="text-[#D4A84B]">We execute.</span>
             </h1>
-            <p className="text-lg text-[#BDBDBD] leading-relaxed">
+            <p className="text-lg text-white/80 leading-relaxed">
               Execute Group is a Dubai-registered business enablement platform
               helping individuals and companies launch, move, and scale between
               Africa and the UAE. We are not a services company—we are a platform company.
@@ -63,12 +70,13 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-32 bg-[#141414]">
+      <section className="py-32 bg-[#0A0A0A]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             <AnimatedSection>
               <h2 className="text-2xl font-bold text-white mb-6">Our Story</h2>
-              <div className="space-y-6 text-[#BDBDBD] leading-relaxed">
+              <div className="w-16 h-px bg-[#D4A84B] mb-8" />
+              <div className="space-y-6 text-white/70 leading-relaxed">
                 <p>
                   Founded in Dubai, Execute Group emerged from a simple observation:
                   the immense potential between African markets and the UAE remained
@@ -90,8 +98,8 @@ export default function About() {
 
             <div className="space-y-12">
               <AnimatedSection delay={0.1}>
-                <div className="p-8 bg-[#0F0F0F] border border-white/5 rounded-md">
-                  <h3 className="text-lg font-semibold text-[#8FAF9B] mb-4">Mission</h3>
+                <div className="p-8 bg-gradient-to-br from-[#D4A84B]/10 to-transparent border border-[#D4A84B]/20 rounded-md">
+                  <h3 className="text-lg font-semibold text-[#D4A84B] mb-4">Mission</h3>
                   <p className="text-white">
                     To enable seamless business creation, growth, and mobility
                     between Africa and the UAE through integrated technology,
@@ -101,8 +109,8 @@ export default function About() {
               </AnimatedSection>
 
               <AnimatedSection delay={0.2}>
-                <div className="p-8 bg-[#0F0F0F] border border-white/5 rounded-md">
-                  <h3 className="text-lg font-semibold text-[#8FAF9B] mb-4">Vision</h3>
+                <div className="p-8 bg-gradient-to-br from-[#D4A84B]/10 to-transparent border border-[#D4A84B]/20 rounded-md">
+                  <h3 className="text-lg font-semibold text-[#D4A84B] mb-4">Vision</h3>
                   <p className="text-white">
                     To be the most trusted enablement platform for cross-border
                     business and lifestyle solutions between Africa and the Middle East.
@@ -114,24 +122,24 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-32">
+      <section className="py-32 bg-[#0F0F0F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="text-center mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Our Values
             </h2>
-            <div className="w-16 h-px bg-[#8FAF9B] mx-auto" />
+            <div className="w-16 h-px bg-[#D4A84B] mx-auto" />
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <AnimatedSection key={value.title} delay={index * 0.1}>
-                <div className="text-center p-8">
-                  <value.icon className="w-10 h-10 text-[#8FAF9B] mx-auto mb-6" />
+                <div className="text-center p-8 border border-white/5 rounded-md hover:border-[#D4A84B]/30 transition-colors">
+                  <value.icon className="w-10 h-10 text-[#D4A84B] mx-auto mb-6" />
                   <h3 className="text-xl font-bold text-white mb-4">
                     {value.title}
                   </h3>
-                  <p className="text-[#BDBDBD] text-sm">
+                  <p className="text-white/60 text-sm">
                     {value.description}
                   </p>
                 </div>
@@ -141,28 +149,28 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-32 bg-[#141414]">
+      <section className="py-32 bg-[#0A0A0A]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="text-center mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Founders
             </h2>
-            <div className="w-16 h-px bg-[#8FAF9B] mx-auto" />
+            <div className="w-16 h-px bg-[#D4A84B] mx-auto" />
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {founders.map((founder, index) => (
               <AnimatedSection key={founder.name} delay={index * 0.1}>
-                <div className="text-center p-8 bg-[#0F0F0F] border border-white/5 rounded-md">
-                  <div className="w-20 h-20 bg-[#8FAF9B]/10 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-[#8FAF9B]">
+                <div className="text-center p-8 bg-gradient-to-b from-white/[0.03] to-transparent border border-white/5 rounded-md hover:border-[#D4A84B]/30 transition-colors">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#D4A84B]/30 to-[#D4A84B]/10 rounded-full mx-auto mb-6 flex items-center justify-center border border-[#D4A84B]/30">
+                    <span className="text-2xl font-bold text-[#D4A84B]">
                       {founder.name.charAt(0)}
                     </span>
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">
                     {founder.name}
                   </h3>
-                  <p className="text-[#BDBDBD] text-sm">
+                  <p className="text-white/60 text-sm">
                     {founder.role}
                   </p>
                 </div>
@@ -172,16 +180,18 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-32">
+      <section className="py-32 bg-[#0F0F0F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection>
             <div className="flex items-start gap-6 max-w-2xl">
-              <MapPin className="w-8 h-8 text-[#8FAF9B] flex-shrink-0 mt-1" />
+              <div className="p-3 bg-[#D4A84B]/10 rounded-md border border-[#D4A84B]/20">
+                <MapPin className="w-8 h-8 text-[#D4A84B] flex-shrink-0" />
+              </div>
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">
                   Headquarters
                 </h2>
-                <div className="text-[#BDBDBD] space-y-1">
+                <div className="text-white/60 space-y-1">
                   <p>Office No: BC-889841</p>
                   <p>26th Floor, Amber Gem Tower</p>
                   <p>Sheikh Khalifa Street</p>

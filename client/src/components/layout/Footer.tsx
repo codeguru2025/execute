@@ -63,7 +63,7 @@ export function Footer() {
                   <li key={link.label}>
                     <Link href={link.href}>
                       <span
-                        className="text-sm text-[#BDBDBD] hover:text-[#8FAF9B] transition-colors cursor-pointer"
+                        className="text-sm text-[#BDBDBD] hover:text-[#D4A84B] transition-colors cursor-pointer"
                         data-testid={`link-footer-${link.label.toLowerCase().replace(/\s+/g, '-')}`}
                       >
                         {link.label}
@@ -81,7 +81,7 @@ export function Footer() {
             <p className="text-xs text-[#BDBDBD]/60">
               © {new Date().getFullYear()} Execute Group. All rights reserved.
             </p>
-            <p className="text-xs text-[#8FAF9B]">
+            <p className="text-xs text-[#D4A84B]">
               Built to Execute.
             </p>
           </div>

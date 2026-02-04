@@ -4,6 +4,9 @@ import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { useSEO } from "@/hooks/use-seo";
 import { ArrowRight, Code, Plane, Coffee } from "lucide-react";
+import dubaiBusiness from "../assets/images/dubai-business.jpg";
+import travelLuxury from "../assets/images/travel-luxury.jpg";
+import beveragePremium from "../assets/images/beverage-premium.jpg";
 
 const divisions = [
   {
@@ -13,6 +16,7 @@ const divisions = [
     description: "Design, digitize, optimize, and scale businesses with cutting-edge technology, revenue systems, training, and business enablement services.",
     href: "/technology-growth",
     services: ["Digital Build", "Revenue Systems", "Training", "Business Enablement"],
+    image: dubaiBusiness,
   },
   {
     icon: Plane,
@@ -21,6 +25,7 @@ const divisions = [
     description: "Facilitate travel, logistics, and physical experiences through events, cross-border travel services, and local Dubai experiences.",
     href: "/events-travel",
     services: ["Conferences & Events", "Africa → Dubai Travel", "Dubai → Africa Tours", "Local Hospitality"],
+    image: travelLuxury,
   },
   {
     icon: Coffee,
@@ -29,6 +34,7 @@ const divisions = [
     description: "Crafted beverages that embody clarity and precision—matcha, mocktails, juices, and premium drinks for discerning tastes.",
     href: "/beverage",
     services: ["Signature Drinks", "Cloud Kitchen", "Event Supply", "Office Supply"],
+    image: beveragePremium,
   },
 ];
 
@@ -43,14 +49,14 @@ export default function Divisions() {
       <section className="py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl mb-20">
-            <p className="text-[#8FAF9B] text-sm tracking-[0.2em] uppercase mb-6">
+            <span className="inline-block px-4 py-2 bg-[#D4A84B]/20 border border-[#D4A84B]/40 rounded-full text-[#D4A84B] text-sm font-medium tracking-wide mb-6">
               Our Divisions
-            </p>
+            </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-8">
               Three Pillars.<br />
-              One Platform.
+              <span className="text-[#D4A84B]">One Platform.</span>
             </h1>
-            <p className="text-lg text-[#BDBDBD] leading-relaxed">
+            <p className="text-lg text-white/70 leading-relaxed">
               Execute Group operates through three specialized divisions, each
               focused on a distinct pillar of our platform. Together, they form
               a comprehensive ecosystem for business enablement.
@@ -63,43 +69,56 @@ export default function Divisions() {
                 <Link href={division.href}>
                   <motion.div
                     whileHover={{ x: 8 }}
-                    className="group p-8 lg:p-12 bg-[#141414] border border-white/5 rounded-md hover:border-[#8FAF9B]/30 transition-all cursor-pointer"
+                    className="group relative overflow-hidden rounded-md cursor-pointer"
                     data-testid={`card-division-${index}`}
                   >
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                      <div className="lg:col-span-1">
-                        <division.icon className="w-12 h-12 text-[#8FAF9B]" />
-                      </div>
-                      
-                      <div className="lg:col-span-7">
-                        <p className="text-[#8FAF9B] text-xs tracking-wider uppercase mb-2">
-                          {division.pillar}
-                        </p>
-                        <h2 className="text-2xl font-bold text-white mb-3">
-                          {division.title}
-                        </h2>
-                        <p className="text-[#BDBDBD] leading-relaxed">
-                          {division.description}
-                        </p>
-                      </div>
-                      
-                      <div className="lg:col-span-3">
-                        <div className="flex flex-wrap gap-2">
-                          {division.services.map((service) => (
-                            <span
-                              key={service}
-                              className="px-3 py-1 text-xs text-[#BDBDBD] bg-white/5 rounded-md"
-                            >
-                              {service}
-                            </span>
-                          ))}
+                    <div className="absolute inset-0">
+                      <img 
+                        src={division.image} 
+                        alt={division.title}
+                        className="w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/40" />
+                    </div>
+                    
+                    <div className="relative p-8 lg:p-12">
+                      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div className="lg:col-span-1">
+                          <div className="p-3 bg-[#D4A84B]/10 rounded-md border border-[#D4A84B]/20 inline-block">
+                            <division.icon className="w-8 h-8 text-[#D4A84B]" />
+                          </div>
                         </div>
-                      </div>
-                      
-                      <div className="lg:col-span-1 flex justify-end">
-                        <ArrowRight
-                          className="w-6 h-6 text-[#BDBDBD] group-hover:text-[#8FAF9B] group-hover:translate-x-2 transition-all"
-                        />
+                        
+                        <div className="lg:col-span-7">
+                          <p className="text-[#D4A84B] text-xs tracking-wider uppercase mb-2">
+                            {division.pillar}
+                          </p>
+                          <h2 className="text-2xl font-bold text-white mb-3">
+                            {division.title}
+                          </h2>
+                          <p className="text-white/70 leading-relaxed">
+                            {division.description}
+                          </p>
+                        </div>
+                        
+                        <div className="lg:col-span-3">
+                          <div className="flex flex-wrap gap-2">
+                            {division.services.map((service) => (
+                              <span
+                                key={service}
+                                className="px-3 py-1 text-xs text-white/80 bg-white/10 backdrop-blur-sm rounded-md border border-white/10"
+                              >
+                                {service}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                        
+                        <div className="lg:col-span-1 flex justify-end">
+                          <ArrowRight
+                            className="w-6 h-6 text-white/60 group-hover:text-[#D4A84B] group-hover:translate-x-2 transition-all"
+                          />
+                        </div>
                       </div>
                     </div>
                   </motion.div>
@@ -110,14 +129,14 @@ export default function Divisions() {
         </div>
       </section>
 
-      <section className="py-32 bg-[#141414]">
+      <section className="py-32 bg-[#0A0A0A]">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Not a services company.<br />
-              A platform company.
+              <span className="text-[#D4A84B]">A platform company.</span>
             </h2>
-            <p className="text-[#BDBDBD] mb-10 max-w-xl mx-auto">
+            <p className="text-white/60 mb-10 max-w-xl mx-auto">
               We combine Technology + Business Systems + Travel + Events + Lifestyle
               Brands into one cohesive platform that executes.
             </p>
@@ -125,7 +144,7 @@ export default function Divisions() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-10 py-4 bg-[#8FAF9B] text-[#0F0F0F] font-semibold rounded-md hover-elevate"
+                className="px-10 py-4 bg-[#D4A84B] text-black font-semibold rounded-md hover-elevate"
                 data-testid="button-partner-with-us"
               >
                 Partner With Us

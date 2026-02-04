@@ -94,7 +94,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             <AnimatedSection>
-              <p className="text-[#8FAF9B] text-sm tracking-[0.2em] uppercase mb-6">
+              <p className="text-[#D4A84B] text-sm tracking-[0.2em] uppercase mb-6">
                 Contact Us
               </p>
               <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-8">
@@ -107,7 +107,7 @@ export default function Contact() {
 
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
-                  <MapPin className="w-5 h-5 text-[#8FAF9B] mt-1 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 text-[#D4A84B] mt-1 flex-shrink-0" />
                   <div>
                     <p className="text-white font-medium mb-1">Office</p>
                     <p className="text-[#BDBDBD] text-sm">
@@ -119,7 +119,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <Mail className="w-5 h-5 text-[#8FAF9B] mt-1 flex-shrink-0" />
+                  <Mail className="w-5 h-5 text-[#D4A84B] mt-1 flex-shrink-0" />
                   <div>
                     <p className="text-white font-medium mb-1">Email</p>
                     <p className="text-[#BDBDBD] text-sm">
@@ -129,7 +129,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <Phone className="w-5 h-5 text-[#8FAF9B] mt-1 flex-shrink-0" />
+                  <Phone className="w-5 h-5 text-[#D4A84B] mt-1 flex-shrink-0" />
                   <div>
                     <p className="text-white font-medium mb-1">Phone</p>
                     <p className="text-[#BDBDBD] text-sm">
@@ -147,8 +147,8 @@ export default function Contact() {
                   animate={{ opacity: 1, scale: 1 }}
                   className="p-12 bg-[#141414] border border-white/5 rounded-md text-center"
                 >
-                  <div className="w-16 h-16 bg-[#8FAF9B]/10 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <Check className="w-8 h-8 text-[#8FAF9B]" />
+                  <div className="w-16 h-16 bg-[#D4A84B]/10 rounded-full mx-auto mb-6 flex items-center justify-center">
+                    <Check className="w-8 h-8 text-[#D4A84B]" />
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">
                     Message Sent
@@ -296,7 +296,7 @@ export default function Contact() {
                       <Button
                         type="submit"
                         disabled={mutation.isPending}
-                        className="w-full bg-[#8FAF9B] text-[#0F0F0F] hover:bg-[#8FAF9B]/90 font-semibold disabled:opacity-70"
+                        className="w-full bg-[#D4A84B] text-[#0F0F0F] hover:bg-[#D4A84B]/90 font-semibold disabled:opacity-70"
                         data-testid="button-submit-contact"
                       >
                         {mutation.isPending ? (

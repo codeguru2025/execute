@@ -20,10 +20,10 @@ export function Navbar() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 bg-[#0F0F0F]/90 backdrop-blur-md border-b border-white/5"
+      className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/90 via-black/70 to-transparent"
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           <Link href="/" data-testid="link-home-logo">
             <motion.div
               whileHover={{ scale: 1.02 }}
@@ -32,7 +32,7 @@ export function Navbar() {
               <img
                 src={logoImage}
                 alt="Execute Group"
-                className="h-10 w-auto object-contain"
+                className="h-16 md:h-20 w-auto object-contain"
               />
             </motion.div>
           </Link>
@@ -42,10 +42,10 @@ export function Navbar() {
               <Link key={link.href} href={link.href}>
                 <motion.span
                   whileHover={{ opacity: 1 }}
-                  className={`text-sm tracking-wide transition-colors cursor-pointer ${
+                  className={`text-sm font-medium tracking-wide transition-colors cursor-pointer ${
                     location === link.href
                       ? "text-white"
-                      : "text-[#BDBDBD] hover:text-white"
+                      : "text-white/70 hover:text-white"
                   }`}
                   data-testid={`link-nav-${link.label.toLowerCase()}`}
                 >
@@ -71,7 +71,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#0F0F0F] border-t border-white/5"
+            className="md:hidden bg-black/95 backdrop-blur-md border-t border-white/10"
           >
             <div className="px-6 py-6 space-y-4">
               {navLinks.map((link) => (
@@ -79,10 +79,10 @@ export function Navbar() {
                   <motion.div
                     whileTap={{ scale: 0.98 }}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`block py-2 text-lg ${
+                    className={`block py-2 text-lg font-medium ${
                       location === link.href
                         ? "text-white"
-                        : "text-[#BDBDBD]"
+                        : "text-white/70"
                     }`}
                     data-testid={`link-mobile-${link.label.toLowerCase()}`}
                   >
