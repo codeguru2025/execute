@@ -5,6 +5,19 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { useSEO } from "@/hooks/use-seo";
 import { ArrowRight, Leaf, Droplets, Coffee, Quote } from "lucide-react";
 import beveragePremium from "../assets/images/beverage-premium.webp";
+import drinkMatcha from "../assets/images/drink-matcha.webp";
+import drinkMocktail from "../assets/images/drink-mocktail.webp";
+import drinkJuice from "../assets/images/drink-juice.webp";
+import drinkBubbleTea from "../assets/images/drink-bubble-tea.webp";
+import drinkCoffee from "../assets/images/drink-coffee.webp";
+
+const drinkCategories = [
+  { name: "Matcha", image: drinkMatcha, description: "Japanese ceremonial blends" },
+  { name: "Mocktails", image: drinkMocktail, description: "Non-alcoholic artistry" },
+  { name: "Fresh Juices", image: drinkJuice, description: "Vibrant & refreshing" },
+  { name: "Bubble Tea", image: drinkBubbleTea, description: "Boba with a twist" },
+  { name: "Specialty Coffee", image: drinkCoffee, description: "Craft coffee culture" },
+];
 
 const drinks = [
   { name: "Classic Iced Matcha Latte", category: "Matcha", description: "Japanese matcha with oat or almond milk" },
@@ -116,7 +129,36 @@ export default function Beverage() {
         </div>
       </section>
 
-      <section className="py-32 bg-[#0F0F0F]">
+      <section className="py-24 bg-[#0F0F0F]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimatedSection className="text-center mb-12">
+            <h2 className="text-2xl font-bold text-white mb-4">Our Craft</h2>
+            <div className="w-16 h-px bg-[#D4A84B] mx-auto" />
+          </AnimatedSection>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {drinkCategories.map((category, index) => (
+              <AnimatedSection key={category.name} delay={index * 0.1}>
+                <div className="group relative overflow-hidden rounded-md aspect-[3/4]">
+                  <img 
+                    src={category.image} 
+                    alt={category.name}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-white font-semibold text-lg">{category.name}</h3>
+                    <p className="text-white/70 text-xs">{category.description}</p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-32 bg-[#0A0A0A]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="mb-16">
             <h2 className="text-2xl font-bold text-white mb-4">
