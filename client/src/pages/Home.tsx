@@ -78,13 +78,14 @@ export default function Home() {
             </motion.div>
             
             <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold text-white tracking-tight mb-8">
-              <span className="block">Built to</span>
+              <span className="block">Sip. Spark.</span>
               <span className="text-[#D4A84B]">Execute.</span>
             </h1>
             
             <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-12">
-              A Dubai-registered business enablement platform helping individuals
-              and companies launch, move, and scale between Africa and the UAE.
+              A Dubai-registered business enablement platform helping individuals and companies 
+              launch, move, and scale between Africa and the UAE. Premium beverages, technology, 
+              events, and business solutions — all in one platform.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

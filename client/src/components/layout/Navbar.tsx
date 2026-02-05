@@ -2,7 +2,7 @@ import { Link, useLocation } from "wouter";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import logoImage from "@assets/EXECUTE_LOGO_1770211576197.jpeg";
+import logoImage from "../../assets/images/execute-logo.jpg";
 
 const navLinks = [
   { href: "/", label: "Home" },

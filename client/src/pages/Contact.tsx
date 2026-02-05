@@ -109,11 +109,9 @@ export default function Contact() {
                 <div className="flex items-start gap-4">
                   <MapPin className="w-5 h-5 text-[#D4A84B] mt-1 flex-shrink-0" />
                   <div>
-                    <p className="text-white font-medium mb-1">Office</p>
+                    <p className="text-white font-medium mb-1">Location</p>
                     <p className="text-[#BDBDBD] text-sm">
-                      Office No: BC-889841<br />
-                      26th Floor, Amber Gem Tower<br />
-                      Sheikh Khalifa Street, Ajman, UAE
+                      Dubai, United Arab Emirates
                     </p>
                   </div>
                 </div>
@@ -123,7 +121,7 @@ export default function Contact() {
                   <div>
                     <p className="text-white font-medium mb-1">Email</p>
                     <p className="text-[#BDBDBD] text-sm">
-                      info@executegroup.ae
+                      brighton.hendry@gmail.com
                     </p>
                   </div>
                 </div>
@@ -133,7 +131,7 @@ export default function Contact() {
                   <div>
                     <p className="text-white font-medium mb-1">Phone</p>
                     <p className="text-[#BDBDBD] text-sm">
-                      +971 XX XXX XXXX
+                      +971 50 835 9747
                     </p>
                   </div>
                 </div>

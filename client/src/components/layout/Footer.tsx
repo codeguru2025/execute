@@ -36,13 +36,13 @@ export function Footer() {
                 Execute Group
               </h3>
               <p className="text-[#BDBDBD] text-sm leading-relaxed max-w-md mb-6">
-                Dubai-registered business enablement platform helping individuals
-                and companies launch, move, and scale between Africa and the UAE.
+                Dubai-registered business enablement platform helping individuals and companies 
+                launch, move, and scale between Africa and the UAE. Sip. Spark. Execute.
               </p>
-              <div className="text-sm text-[#BDBDBD]/70">
-                <p>Office No: BC-889841</p>
-                <p>26th Floor, Amber Gem Tower</p>
-                <p>Sheikh Khalifa Street, Ajman, UAE</p>
+              <div className="text-sm text-[#BDBDBD]/70 space-y-1">
+                <p>Dubai, United Arab Emirates</p>
+                <p className="text-[#D4A84B]">+971 50 835 9747</p>
+                <p>brighton.hendry@gmail.com</p>
               </div>
             </motion.div>
           </div>

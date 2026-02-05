@@ -1,21 +1,24 @@
 import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { useSEO } from "@/hooks/use-seo";
-import { MapPin, Target, Eye, Users } from "lucide-react";
+import { MapPin, Target, Eye, Users, Quote, Briefcase } from "lucide-react";
 import dubaiLuxury from "../assets/images/dubai-luxury.jpg";
 
 const founders = [
   {
     name: "Brighton Sibanda",
-    role: "Co-Founder",
+    role: "Founder & Beverage Specialist",
+    bio: "5+ years in Dubai's hospitality industry. Worked with Avantcha, Bateel, Mawaheb Café, and Mugg & Bean.",
   },
   {
     name: "Handsome Sibanda",
     role: "Co-Founder",
+    bio: "Strategic operations and business development across Africa and UAE markets.",
   },
   {
     name: "Augustus Siziba",
     role: "Co-Founder",
+    bio: "Technology and growth systems expertise enabling cross-border business solutions.",
   },
 ];
 
@@ -34,6 +37,24 @@ const values = [
     icon: Users,
     title: "Partnership",
     description: "Building lasting relationships that create mutual value.",
+  },
+];
+
+const experience = [
+  { company: "Avantcha", desc: "Luxury tea house — mastered the art of detail and precision" },
+  { company: "Bateel", desc: "Premium café culture — learned luxury presentation and service" },
+  { company: "Mawaheb Café", desc: "Art studio café for people of determination — shaped leadership and purpose" },
+  { company: "Mugg & Bean", desc: "Pre-opening projects in Dubai and South Africa — entrepreneurial foundation" },
+];
+
+const testimonials = [
+  {
+    quote: "Brighton made Mawaheb Café feel like home. It wasn't just about the coffee — it was about the way he connected with people and made everyone feel welcome.",
+    author: "Guest, Dubai",
+  },
+  {
+    quote: "I've watched Brighton grow from a young barista into a leader with vision. EXECUTE is the natural next step — a brand that combines his international experience with his deep sense of community.",
+    author: "Russel Sanchez, Hospitality Mentor, UAE",
   },
 ];
 
@@ -78,20 +99,22 @@ export default function About() {
               <div className="w-16 h-px bg-[#D4A84B] mb-8" />
               <div className="space-y-6 text-white/70 leading-relaxed">
                 <p>
-                  Founded in Dubai, Execute Group emerged from a simple observation:
-                  the immense potential between African markets and the UAE remained
-                  largely untapped due to fragmented services and lack of integrated
-                  solutions.
+                  EXECUTE was born out of a simple but powerful dream: to create experiences 
+                  that spark moments, connections, and memories. The inspiration came from 
+                  living between Dubai's fast-paced café culture and Africa's natural vibrance.
                 </p>
                 <p>
-                  We built Execute Group to be the definitive bridge—combining
-                  technology, business systems, travel, events, and lifestyle brands
-                  into a single, cohesive platform that delivers results.
+                  In Dubai, cafés are sleek, creative, and Instagram-worthy; back home, we saw 
+                  the gap — locals and tourists alike were missing a modern, global-standard 
+                  experience that still felt welcoming and personal.
                 </p>
                 <p>
-                  Today, we serve entrepreneurs, businesses, and individuals who
-                  demand execution over promises. Our institutional approach ensures
-                  every engagement is backed by systems, not just intentions.
+                  The name EXECUTE carries our spirit: to stop waiting and start doing. To take 
+                  a vision and turn it into reality. Today, we serve entrepreneurs, businesses, 
+                  and individuals who demand execution over promises.
+                </p>
+                <p className="text-[#D4A84B] font-medium italic">
+                  "Great moments don't just happen — they're executed."
                 </p>
               </div>
             </AnimatedSection>
@@ -101,9 +124,9 @@ export default function About() {
                 <div className="p-8 bg-gradient-to-br from-[#D4A84B]/10 to-transparent border border-[#D4A84B]/20 rounded-md">
                   <h3 className="text-lg font-semibold text-[#D4A84B] mb-4">Mission</h3>
                   <p className="text-white">
-                    To enable seamless business creation, growth, and mobility
-                    between Africa and the UAE through integrated technology,
-                    systems, and premium experiences.
+                    To enable seamless business creation, growth, and mobility between Africa 
+                    and the UAE through integrated technology, systems, premium experiences, 
+                    and lifestyle brands that elevate everyday moments.
                   </p>
                 </div>
               </AnimatedSection>
@@ -112,8 +135,9 @@ export default function About() {
                 <div className="p-8 bg-gradient-to-br from-[#D4A84B]/10 to-transparent border border-[#D4A84B]/20 rounded-md">
                   <h3 className="text-lg font-semibold text-[#D4A84B] mb-4">Vision</h3>
                   <p className="text-white">
-                    To be the most trusted enablement platform for cross-border
-                    business and lifestyle solutions between Africa and the Middle East.
+                    To be the most trusted enablement platform for cross-border business and 
+                    lifestyle solutions between Africa and the Middle East — known for creativity, 
+                    quality, and conscious living.
                   </p>
                 </div>
               </AnimatedSection>
@@ -158,7 +182,7 @@ export default function About() {
             <div className="w-16 h-px bg-[#D4A84B] mx-auto" />
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {founders.map((founder, index) => (
               <AnimatedSection key={founder.name} delay={index * 0.1}>
                 <div className="text-center p-8 bg-gradient-to-b from-white/[0.03] to-transparent border border-white/5 rounded-md hover:border-[#D4A84B]/30 transition-colors">
@@ -170,8 +194,69 @@ export default function About() {
                   <h3 className="text-lg font-semibold text-white mb-2">
                     {founder.name}
                   </h3>
-                  <p className="text-white/60 text-sm">
+                  <p className="text-[#D4A84B] text-sm mb-4">
                     {founder.role}
+                  </p>
+                  <p className="text-white/60 text-sm">
+                    {founder.bio}
+                  </p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-32 bg-[#0F0F0F]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimatedSection className="mb-16">
+            <div className="flex items-center gap-4 mb-6">
+              <Briefcase className="w-8 h-8 text-[#D4A84B]" />
+              <h2 className="text-2xl font-bold text-white">Brighton's Journey</h2>
+            </div>
+            <div className="w-16 h-px bg-[#D4A84B]" />
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {experience.map((exp, index) => (
+              <AnimatedSection key={exp.company} delay={index * 0.1}>
+                <div className="p-6 border-l-2 border-[#D4A84B]/30 hover:border-[#D4A84B] transition-colors">
+                  <h3 className="text-lg font-semibold text-[#D4A84B] mb-2">{exp.company}</h3>
+                  <p className="text-white/60 text-sm">{exp.desc}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          <AnimatedSection delay={0.4} className="mt-12 max-w-3xl">
+            <p className="text-white/70 leading-relaxed">
+              EXECUTE is the result of all these experiences. Every lesson — from the artistry 
+              at Avantcha, the refinement at Bateel, the inclusivity at Mawaheb, and the 
+              entrepreneurial spirit of Mugg & Bean — has been poured into this brand. The vision 
+              is simple: to build experiences that feel world-class but also human, elegant but 
+              still warm and welcoming.
+            </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section className="py-32 bg-[#0A0A0A]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimatedSection className="text-center mb-16">
+            <h2 className="text-2xl font-bold text-white mb-4">What People Say</h2>
+            <div className="w-16 h-px bg-[#D4A84B] mx-auto" />
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {testimonials.map((testimonial, index) => (
+              <AnimatedSection key={index} delay={index * 0.1}>
+                <div className="p-8 bg-gradient-to-br from-[#D4A84B]/10 to-transparent border border-[#D4A84B]/20 rounded-md h-full">
+                  <Quote className="w-8 h-8 text-[#D4A84B]/40 mb-4" />
+                  <p className="text-white/80 leading-relaxed mb-6 italic">
+                    "{testimonial.quote}"
+                  </p>
+                  <p className="text-[#D4A84B] text-sm font-medium">
+                    — {testimonial.author}
                   </p>
                 </div>
               </AnimatedSection>
@@ -192,10 +277,9 @@ export default function About() {
                   Headquarters
                 </h2>
                 <div className="text-white/60 space-y-1">
-                  <p>Office No: BC-889841</p>
-                  <p>26th Floor, Amber Gem Tower</p>
-                  <p>Sheikh Khalifa Street</p>
-                  <p>Ajman, UAE</p>
+                  <p>Dubai, United Arab Emirates</p>
+                  <p className="text-[#D4A84B]">+971 50 835 9747</p>
+                  <p>brighton.hendry@gmail.com</p>
                 </div>
               </div>
             </div>
