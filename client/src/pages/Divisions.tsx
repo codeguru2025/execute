@@ -138,8 +138,8 @@ export default function Divisions() {
             </h2>
             <p className="text-white/60 mb-10 max-w-xl mx-auto">
               Technology & Growth to build businesses. Events & Travel to move people. 
-              Execute Beverage to fuel lifestyles. Together, we enable seamless 
-              business creation between Africa and the UAE.
+              Execute Beverage to fuel lifestyles. Three divisions working together 
+              to help you thrive between Africa and the UAE.
             </p>
             <Link href="/contact">
               <motion.button

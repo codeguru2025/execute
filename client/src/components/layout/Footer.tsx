@@ -36,8 +36,8 @@ export function Footer() {
                 Execute Group
               </h3>
               <p className="text-[#BDBDBD] text-sm leading-relaxed max-w-md mb-6">
-                Dubai-registered business enablement platform helping individuals and companies 
-                launch, move, and scale between Africa and the UAE. Sip. Spark. Execute.
+                A Dubai-registered company offering Technology & Growth, Events & Travel, 
+                and Execute Beverage — connecting Africa and the UAE. Sip. Spark. Execute.
               </p>
               <div className="text-sm text-[#BDBDBD]/70 space-y-1">
                 <p>Dubai, United Arab Emirates</p>

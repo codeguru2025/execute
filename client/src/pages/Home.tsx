@@ -46,7 +46,7 @@ const enablements = [
 export default function Home() {
   useSEO({
     title: "Built to Execute",
-    description: "Execute Group is a Dubai-registered business enablement platform helping individuals and companies launch, move, and scale between Africa and the UAE.",
+    description: "Execute Group offers Technology & Growth, Events & Travel, and Execute Beverage — helping individuals and companies connect between Africa and the UAE.",
   });
 
   return (
@@ -73,7 +73,7 @@ export default function Home() {
               className="mb-8"
             >
               <span className="inline-block px-4 py-2 bg-[#D4A84B]/20 border border-[#D4A84B]/40 rounded-full text-[#D4A84B] text-sm font-medium tracking-wide">
-                Dubai Business Enablement Platform
+                Technology • Events • Beverage
               </span>
             </motion.div>
             
@@ -83,9 +83,9 @@ export default function Home() {
             </h1>
             
             <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-12">
-              A Dubai-registered business enablement platform helping individuals and companies 
-              launch, move, and scale between Africa and the UAE. Premium beverages, technology, 
-              events, and business solutions — all in one platform.
+              A Dubai-registered company with three divisions: Technology & Growth, 
+              Events & Travel, and Execute Beverage — helping you build, move, and thrive 
+              between Africa and the UAE.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

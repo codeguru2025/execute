@@ -83,9 +83,9 @@ export default function About() {
               <span className="text-[#D4A84B]">We execute.</span>
             </h1>
             <p className="text-lg text-white/80 leading-relaxed">
-              Execute Group is a Dubai-registered business enablement platform
-              helping individuals and companies launch, move, and scale between
-              Africa and the UAE. We are not a services company—we are a platform company.
+              Execute Group is a Dubai-registered company with three divisions: 
+              Technology & Growth, Events & Travel, and Execute Beverage — helping 
+              individuals and companies build, move, and thrive between Africa and the UAE.
             </p>
           </AnimatedSection>
         </div>
@@ -135,9 +135,9 @@ export default function About() {
                 <div className="p-8 bg-gradient-to-br from-[#D4A84B]/10 to-transparent border border-[#D4A84B]/20 rounded-md">
                   <h3 className="text-lg font-semibold text-[#D4A84B] mb-4">Vision</h3>
                   <p className="text-white">
-                    To be the most trusted enablement platform for cross-border business and 
+                    To be the most trusted company for cross-border business and 
                     lifestyle solutions between Africa and the Middle East — known for creativity, 
-                    quality, and conscious living.
+                    quality, and execution.
                   </p>
                 </div>
               </AnimatedSection>
