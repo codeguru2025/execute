@@ -8,6 +8,10 @@ import dubaiSkyline from "../assets/images/dubai-skyline.webp";
 import dubaiBusiness from "../assets/images/dubai-business.webp";
 import travelLuxury from "../assets/images/travel-luxury.webp";
 import beveragePremium from "../assets/images/beverage-premium.webp";
+import pillarCreation from "../assets/images/pillar-creation.webp";
+import pillarGrowth from "../assets/images/pillar-growth.webp";
+import pillarMobility from "../assets/images/pillar-mobility.webp";
+import pillarExperience from "../assets/images/pillar-experience.webp";
 
 const pillars = [
   {
@@ -37,10 +41,10 @@ const pillars = [
 ];
 
 const enablements = [
-  "Business Creation",
-  "Business Growth",
-  "Cross-Border Mobility",
-  "Premium Experiences",
+  { title: "Business Creation", image: pillarCreation },
+  { title: "Business Growth", image: pillarGrowth },
+  { title: "Cross-Border Mobility", image: pillarMobility },
+  { title: "Premium Experiences", image: pillarExperience },
 ];
 
 export default function Home() {
@@ -141,9 +145,20 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {enablements.map((item, index) => (
-              <AnimatedSection key={item} delay={index * 0.1}>
-                <div className="text-center p-6 border border-white/5 rounded-md bg-white/[0.02] hover:border-[#D4A84B]/30 transition-colors">
-                  <p className="text-white text-lg font-medium">{item}</p>
+              <AnimatedSection key={item.title} delay={index * 0.1}>
+                <div className="group relative overflow-hidden rounded-md border border-white/5 hover:border-[#D4A84B]/30 transition-colors">
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
+                    <p className="text-white text-lg font-medium">{item.title}</p>
+                  </div>
                 </div>
               </AnimatedSection>
             ))}
