@@ -133,12 +133,13 @@ export default function Divisions() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Not a services company.<br />
-              <span className="text-[#D4A84B]">A platform company.</span>
+              Three Pillars.<br />
+              <span className="text-[#D4A84B]">One Vision.</span>
             </h2>
             <p className="text-white/60 mb-10 max-w-xl mx-auto">
-              We combine Technology + Business Systems + Travel + Events + Lifestyle
-              Brands into one cohesive platform that executes.
+              Technology & Growth to build businesses. Events & Travel to move people. 
+              Execute Beverage to fuel lifestyles. Together, we enable seamless 
+              business creation between Africa and the UAE.
             </p>
             <Link href="/contact">
               <motion.button
