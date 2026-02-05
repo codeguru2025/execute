@@ -29,11 +29,13 @@ export function Navbar() {
               whileHover={{ scale: 1.02 }}
               className="flex items-center gap-3"
             >
-              <img
-                src={logoImage}
-                alt="Execute Group"
-                className="h-16 md:h-20 w-auto object-contain"
-              />
+              <div className="bg-white rounded-full px-4 py-2 flex items-center justify-center">
+                <img
+                  src={logoImage}
+                  alt="Execute Group"
+                  className="h-12 md:h-16 w-auto object-contain"
+                />
+              </div>
             </motion.div>
           </Link>
 
