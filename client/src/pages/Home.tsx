@@ -4,10 +4,10 @@ import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { useSEO } from "@/hooks/use-seo";
 import { ArrowRight, Globe, Building2, Plane, Coffee } from "lucide-react";
-import dubaiSkyline from "../assets/images/dubai-skyline.jpg";
-import dubaiBusiness from "../assets/images/dubai-business.jpg";
-import travelLuxury from "../assets/images/travel-luxury.jpg";
-import beveragePremium from "../assets/images/beverage-premium.jpg";
+import dubaiSkyline from "../assets/images/dubai-skyline.webp";
+import dubaiBusiness from "../assets/images/dubai-business.webp";
+import travelLuxury from "../assets/images/travel-luxury.webp";
+import beveragePremium from "../assets/images/beverage-premium.webp";
 
 const pillars = [
   {

@@ -4,9 +4,9 @@ import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { useSEO } from "@/hooks/use-seo";
 import { ArrowRight, Code, Plane, Coffee } from "lucide-react";
-import dubaiBusiness from "../assets/images/dubai-business.jpg";
-import travelLuxury from "../assets/images/travel-luxury.jpg";
-import beveragePremium from "../assets/images/beverage-premium.jpg";
+import dubaiBusiness from "../assets/images/dubai-business.webp";
+import travelLuxury from "../assets/images/travel-luxury.webp";
+import beveragePremium from "../assets/images/beverage-premium.webp";
 
 const divisions = [
   {

@@ -10,7 +10,7 @@ import {
   Building,
   ArrowRight,
 } from "lucide-react";
-import travelLuxury from "../assets/images/travel-luxury.jpg";
+import travelLuxury from "../assets/images/travel-luxury.webp";
 
 const services = [
   {

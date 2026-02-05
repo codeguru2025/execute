@@ -10,7 +10,7 @@ import {
   Briefcase,
   ArrowRight,
 } from "lucide-react";
-import dubaiBusiness from "../assets/images/dubai-business.jpg";
+import dubaiBusiness from "../assets/images/dubai-business.webp";
 
 const services = [
   {

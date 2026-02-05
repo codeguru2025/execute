@@ -2,7 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { useSEO } from "@/hooks/use-seo";
 import { MapPin, Target, Eye, Users, Quote, Briefcase } from "lucide-react";
-import dubaiLuxury from "../assets/images/dubai-luxury.jpg";
+import dubaiLuxury from "../assets/images/dubai-luxury.webp";
 
 const founders = [
   {

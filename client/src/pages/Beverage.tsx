@@ -4,7 +4,7 @@ import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { useSEO } from "@/hooks/use-seo";
 import { ArrowRight, Leaf, Droplets, Coffee, Quote } from "lucide-react";
-import beveragePremium from "../assets/images/beverage-premium.jpg";
+import beveragePremium from "../assets/images/beverage-premium.webp";
 
 const drinks = [
   { name: "Classic Iced Matcha Latte", category: "Matcha", description: "Japanese matcha with oat or almond milk" },
