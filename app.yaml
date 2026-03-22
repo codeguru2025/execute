@@ -1,14 +1,14 @@
-name: execute-app
+name: execute
 region: nyc
 services:
-  - name: execute-web
+  - name: executeuae
     instance_count: 1
     instance_size_slug: basic-xxs
     dockerfile_path: Dockerfile
     envs:
       - key: DATABASE_URL
         scope: RUN_AND_BUILD_TIME
-        value: ${db.DATABASE_URL}
+        value: ${execute.DATABASE_URL}
       - key: NODE_ENV
         scope: RUN_AND_BUILD_TIME
         value: production
@@ -19,7 +19,7 @@ services:
     routes:
       - path: /
 databases:
-  - name: db
+  - name: execute
     engine: PG
     version: "16"
     production: false
