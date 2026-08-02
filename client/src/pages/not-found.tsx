@@ -19,7 +19,7 @@ export default function NotFound() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-8xl font-bold text-[#8FAF9B]/20 mb-4">404</p>
+            <p className="text-8xl font-bold text-[#B8D0C0]/20 mb-4">404</p>
             <h1 className="text-3xl font-bold text-white mb-4">
               Page Not Found
             </h1>

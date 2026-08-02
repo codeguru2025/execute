@@ -2,7 +2,7 @@ import { Link, useLocation } from "wouter";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import logoImage from "../../assets/images/execute-logo.webp";
+import logoImage from "../../assets/images/execute-logo-dark.png";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -29,13 +29,11 @@ export function Navbar() {
               whileHover={{ scale: 1.02 }}
               className="flex items-center gap-3"
             >
-              <div className="bg-white rounded-full px-4 py-2 flex items-center justify-center">
-                <img
-                  src={logoImage}
-                  alt="Execute Group"
-                  className="h-12 md:h-16 w-auto object-contain"
-                />
-              </div>
+              <img
+                src={logoImage}
+                alt="Execute Group"
+                className="h-14 md:h-20 w-auto object-contain"
+              />
             </motion.div>
           </Link>
 

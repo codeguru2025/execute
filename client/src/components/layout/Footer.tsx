@@ -41,7 +41,7 @@ export function Footer() {
               </p>
               <div className="text-sm text-[#BDBDBD]/70 space-y-1">
                 <p>Dubai, United Arab Emirates</p>
-                <p className="text-[#D4A84B]">+971 50 835 9747</p>
+                <p className="text-[#568F69]">+971 50 835 9747</p>
                 <p>brighton.hendry@gmail.com</p>
               </div>
             </motion.div>
@@ -63,7 +63,7 @@ export function Footer() {
                   <li key={link.label}>
                     <Link href={link.href}>
                       <span
-                        className="text-sm text-[#BDBDBD] hover:text-[#D4A84B] transition-colors cursor-pointer"
+                        className="text-sm text-[#BDBDBD] hover:text-[#568F69] transition-colors cursor-pointer"
                         data-testid={`link-footer-${link.label.toLowerCase().replace(/\s+/g, '-')}`}
                       >
                         {link.label}
@@ -81,7 +81,7 @@ export function Footer() {
             <p className="text-xs text-[#BDBDBD]/60">
               © {new Date().getFullYear()} Execute Group. All rights reserved.
             </p>
-            <p className="text-xs text-[#D4A84B]">
+            <p className="text-xs text-[#568F69]">
               Built to Execute.
             </p>
           </div>

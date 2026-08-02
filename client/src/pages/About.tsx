@@ -75,12 +75,12 @@ export default function About() {
         
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-20 relative z-10">
           <AnimatedSection className="max-w-3xl">
-            <span className="inline-block px-4 py-2 bg-[#D4A84B]/20 border border-[#D4A84B]/40 rounded-full text-[#D4A84B] text-sm font-medium tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-[#B8D0C0]/20 border border-[#B8D0C0]/40 rounded-full text-[#568F69] text-sm font-medium tracking-wide mb-6">
               About Execute Group
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-8">
               We don't just consult.<br />
-              <span className="text-[#D4A84B]">We execute.</span>
+              <span className="text-[#B8D0C0]">We execute.</span>
             </h1>
             <p className="text-lg text-white/80 leading-relaxed">
               Execute Group is a Dubai-registered company with three divisions: 
@@ -96,7 +96,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
             <AnimatedSection>
               <h2 className="text-2xl font-bold text-white mb-6">Our Story</h2>
-              <div className="w-16 h-px bg-[#D4A84B] mb-8" />
+              <div className="w-16 h-px bg-[#B8D0C0] mb-8" />
               <div className="space-y-6 text-white/70 leading-relaxed">
                 <p>
                   EXECUTE was born out of a simple but powerful dream: to create experiences 
@@ -113,7 +113,7 @@ export default function About() {
                   a vision and turn it into reality. Today, we serve entrepreneurs, businesses, 
                   and individuals who demand execution over promises.
                 </p>
-                <p className="text-[#D4A84B] font-medium italic">
+                <p className="text-[#568F69] font-medium italic">
                   "Great moments don't just happen — they're executed."
                 </p>
               </div>
@@ -121,8 +121,8 @@ export default function About() {
 
             <div className="space-y-12">
               <AnimatedSection delay={0.1}>
-                <div className="p-8 bg-gradient-to-br from-[#D4A84B]/10 to-transparent border border-[#D4A84B]/20 rounded-md">
-                  <h3 className="text-lg font-semibold text-[#D4A84B] mb-4">Mission</h3>
+                <div className="p-8 bg-gradient-to-br from-[#B8D0C0]/10 to-transparent border border-[#B8D0C0]/20 rounded-md">
+                  <h3 className="text-lg font-semibold text-[#568F69] mb-4">Mission</h3>
                   <p className="text-white">
                     To enable seamless business creation, growth, and mobility between Africa 
                     and the UAE through integrated technology, systems, premium experiences, 
@@ -132,8 +132,8 @@ export default function About() {
               </AnimatedSection>
 
               <AnimatedSection delay={0.2}>
-                <div className="p-8 bg-gradient-to-br from-[#D4A84B]/10 to-transparent border border-[#D4A84B]/20 rounded-md">
-                  <h3 className="text-lg font-semibold text-[#D4A84B] mb-4">Vision</h3>
+                <div className="p-8 bg-gradient-to-br from-[#B8D0C0]/10 to-transparent border border-[#B8D0C0]/20 rounded-md">
+                  <h3 className="text-lg font-semibold text-[#568F69] mb-4">Vision</h3>
                   <p className="text-white">
                     To be the most trusted company for cross-border business and 
                     lifestyle solutions between Africa and the Middle East — known for creativity, 
@@ -152,14 +152,14 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Our Values
             </h2>
-            <div className="w-16 h-px bg-[#D4A84B] mx-auto" />
+            <div className="w-16 h-px bg-[#B8D0C0] mx-auto" />
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <AnimatedSection key={value.title} delay={index * 0.1}>
-                <div className="text-center p-8 border border-white/5 rounded-md hover:border-[#D4A84B]/30 transition-colors">
-                  <value.icon className="w-10 h-10 text-[#D4A84B] mx-auto mb-6" />
+                <div className="text-center p-8 border border-white/5 rounded-md hover:border-[#B8D0C0]/30 transition-colors">
+                  <value.icon className="w-10 h-10 text-[#B8D0C0] mx-auto mb-6" />
                   <h3 className="text-xl font-bold text-white mb-4">
                     {value.title}
                   </h3>
@@ -179,22 +179,22 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Founders
             </h2>
-            <div className="w-16 h-px bg-[#D4A84B] mx-auto" />
+            <div className="w-16 h-px bg-[#B8D0C0] mx-auto" />
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {founders.map((founder, index) => (
               <AnimatedSection key={founder.name} delay={index * 0.1}>
-                <div className="text-center p-8 bg-gradient-to-b from-white/[0.03] to-transparent border border-white/5 rounded-md hover:border-[#D4A84B]/30 transition-colors">
-                  <div className="w-20 h-20 bg-gradient-to-br from-[#D4A84B]/30 to-[#D4A84B]/10 rounded-full mx-auto mb-6 flex items-center justify-center border border-[#D4A84B]/30">
-                    <span className="text-2xl font-bold text-[#D4A84B]">
+                <div className="text-center p-8 bg-gradient-to-b from-white/[0.03] to-transparent border border-white/5 rounded-md hover:border-[#B8D0C0]/30 transition-colors">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#B8D0C0]/30 to-[#B8D0C0]/10 rounded-full mx-auto mb-6 flex items-center justify-center border border-[#B8D0C0]/30">
+                    <span className="text-2xl font-bold text-[#B8D0C0]">
                       {founder.name.charAt(0)}
                     </span>
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">
                     {founder.name}
                   </h3>
-                  <p className="text-[#D4A84B] text-sm mb-4">
+                  <p className="text-[#568F69] text-sm mb-4">
                     {founder.role}
                   </p>
                   <p className="text-white/60 text-sm">
@@ -211,17 +211,17 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="mb-16">
             <div className="flex items-center gap-4 mb-6">
-              <Briefcase className="w-8 h-8 text-[#D4A84B]" />
+              <Briefcase className="w-8 h-8 text-[#B8D0C0]" />
               <h2 className="text-2xl font-bold text-white">Brighton's Journey</h2>
             </div>
-            <div className="w-16 h-px bg-[#D4A84B]" />
+            <div className="w-16 h-px bg-[#B8D0C0]" />
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {experience.map((exp, index) => (
               <AnimatedSection key={exp.company} delay={index * 0.1}>
-                <div className="p-6 border-l-2 border-[#D4A84B]/30 hover:border-[#D4A84B] transition-colors">
-                  <h3 className="text-lg font-semibold text-[#D4A84B] mb-2">{exp.company}</h3>
+                <div className="p-6 border-l-2 border-[#B8D0C0]/30 hover:border-[#B8D0C0] transition-colors">
+                  <h3 className="text-lg font-semibold text-[#568F69] mb-2">{exp.company}</h3>
                   <p className="text-white/60 text-sm">{exp.desc}</p>
                 </div>
               </AnimatedSection>
@@ -244,18 +244,18 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-2xl font-bold text-white mb-4">What People Say</h2>
-            <div className="w-16 h-px bg-[#D4A84B] mx-auto" />
+            <div className="w-16 h-px bg-[#B8D0C0] mx-auto" />
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <AnimatedSection key={index} delay={index * 0.1}>
-                <div className="p-8 bg-gradient-to-br from-[#D4A84B]/10 to-transparent border border-[#D4A84B]/20 rounded-md h-full">
-                  <Quote className="w-8 h-8 text-[#D4A84B]/40 mb-4" />
+                <div className="p-8 bg-gradient-to-br from-[#B8D0C0]/10 to-transparent border border-[#B8D0C0]/20 rounded-md h-full">
+                  <Quote className="w-8 h-8 text-[#B8D0C0]/40 mb-4" />
                   <p className="text-white/80 leading-relaxed mb-6 italic">
                     "{testimonial.quote}"
                   </p>
-                  <p className="text-[#D4A84B] text-sm font-medium">
+                  <p className="text-[#568F69] text-sm font-medium">
                     — {testimonial.author}
                   </p>
                 </div>
@@ -269,8 +269,8 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection>
             <div className="flex items-start gap-6 max-w-2xl">
-              <div className="p-3 bg-[#D4A84B]/10 rounded-md border border-[#D4A84B]/20">
-                <MapPin className="w-8 h-8 text-[#D4A84B] flex-shrink-0" />
+              <div className="p-3 bg-[#B8D0C0]/10 rounded-md border border-[#B8D0C0]/20">
+                <MapPin className="w-8 h-8 text-[#B8D0C0] flex-shrink-0" />
               </div>
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">
@@ -278,7 +278,7 @@ export default function About() {
                 </h2>
                 <div className="text-white/60 space-y-1">
                   <p>Dubai, United Arab Emirates</p>
-                  <p className="text-[#D4A84B]">+971 50 835 9747</p>
+                  <p className="text-[#568F69]">+971 50 835 9747</p>
                   <p>brighton.hendry@gmail.com</p>
                 </div>
               </div>

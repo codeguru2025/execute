@@ -83,11 +83,11 @@ export default function Beverage() {
         
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-20 relative z-10">
           <AnimatedSection className="max-w-3xl">
-            <span className="inline-block px-4 py-2 bg-[#D4A84B]/20 border border-[#D4A84B]/40 rounded-full text-[#D4A84B] text-sm font-medium tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-[#B8D0C0]/20 border border-[#B8D0C0]/40 rounded-full text-[#568F69] text-sm font-medium tracking-wide mb-6">
               Execute Beverage
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-8">
-              Crafted <span className="text-[#D4A84B]">Clarity</span><br />in Every Sip.
+              Crafted <span className="text-[#B8D0C0]">Clarity</span><br />in Every Sip.
             </h1>
             <p className="text-lg text-white/80 leading-relaxed">
               Sip. Spark. Execute. — Modern beverages where mixology meets mindfulness, 
@@ -101,7 +101,7 @@ export default function Beverage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-2xl font-bold text-white mb-4">The Story</h2>
-            <div className="w-16 h-px bg-[#D4A84B] mx-auto" />
+            <div className="w-16 h-px bg-[#B8D0C0] mx-auto" />
           </AnimatedSection>
 
           <AnimatedSection className="max-w-3xl mx-auto text-center">
@@ -122,7 +122,7 @@ export default function Beverage() {
               For the local community, it's a gathering point to experience something new. 
               For everyone, EXECUTE is about creating those small but unforgettable moments.
             </p>
-            <p className="text-[#D4A84B] font-medium italic">
+            <p className="text-[#568F69] font-medium italic">
               "Great moments don't just happen — they're executed."
             </p>
           </AnimatedSection>
@@ -133,7 +133,7 @@ export default function Beverage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="text-center mb-12">
             <h2 className="text-2xl font-bold text-white mb-4">Our Craft</h2>
-            <div className="w-16 h-px bg-[#D4A84B] mx-auto" />
+            <div className="w-16 h-px bg-[#B8D0C0] mx-auto" />
           </AnimatedSection>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -167,14 +167,14 @@ export default function Beverage() {
             <p className="text-white/60 text-sm">
               Each drink crafted for visual appeal, taste balance, and modern health values
             </p>
-            <div className="w-16 h-px bg-[#D4A84B] mt-4" />
+            <div className="w-16 h-px bg-[#B8D0C0] mt-4" />
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {drinks.map((drink, index) => (
               <AnimatedSection key={drink.name} delay={index * 0.05}>
-                <div className="p-6 bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 rounded-md group hover:border-[#D4A84B]/30 transition-colors">
-                  <p className="text-[#D4A84B] text-xs tracking-wider uppercase mb-2">
+                <div className="p-6 bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 rounded-md group hover:border-[#B8D0C0]/30 transition-colors">
+                  <p className="text-[#568F69] text-xs tracking-wider uppercase mb-2">
                     {drink.category}
                   </p>
                   <h3 className="text-lg font-semibold text-white mb-2">
@@ -194,7 +194,7 @@ export default function Beverage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="mb-16">
             <h2 className="text-2xl font-bold text-white mb-4">What Sets Us Apart</h2>
-            <div className="w-16 h-px bg-[#D4A84B]" />
+            <div className="w-16 h-px bg-[#B8D0C0]" />
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -205,7 +205,7 @@ export default function Beverage() {
               { title: "Health & Wellness Focus", desc: "Botanical infusions, fresh ingredients, and functional drinks for modern consumers" },
             ].map((item, index) => (
               <AnimatedSection key={item.title} delay={index * 0.1}>
-                <div className="p-6 border-l-2 border-[#D4A84B]/30 hover:border-[#D4A84B] transition-colors">
+                <div className="p-6 border-l-2 border-[#B8D0C0]/30 hover:border-[#B8D0C0] transition-colors">
                   <h3 className="text-lg font-semibold text-white mb-3">{item.title}</h3>
                   <p className="text-white/60 text-sm">{item.desc}</p>
                 </div>
@@ -219,15 +219,15 @@ export default function Beverage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="mb-16">
             <h2 className="text-2xl font-bold text-white mb-4">Operations</h2>
-            <div className="w-16 h-px bg-[#D4A84B]" />
+            <div className="w-16 h-px bg-[#B8D0C0]" />
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {operations.map((op, index) => (
               <AnimatedSection key={op.title} delay={index * 0.1}>
-                <div className="p-8 bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 rounded-md text-center hover:border-[#D4A84B]/30 transition-colors">
-                  <div className="p-3 bg-[#D4A84B]/10 rounded-md border border-[#D4A84B]/20 inline-block mb-6">
-                    <op.icon className="w-6 h-6 text-[#D4A84B]" />
+                <div className="p-8 bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 rounded-md text-center hover:border-[#B8D0C0]/30 transition-colors">
+                  <div className="p-3 bg-[#B8D0C0]/10 rounded-md border border-[#B8D0C0]/20 inline-block mb-6">
+                    <op.icon className="w-6 h-6 text-[#B8D0C0]" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-3">
                     {op.title}
@@ -246,18 +246,18 @@ export default function Beverage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-2xl font-bold text-white mb-4">What People Say</h2>
-            <div className="w-16 h-px bg-[#D4A84B] mx-auto" />
+            <div className="w-16 h-px bg-[#B8D0C0] mx-auto" />
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <AnimatedSection key={index} delay={index * 0.1}>
-                <div className="p-8 bg-gradient-to-br from-[#D4A84B]/10 to-transparent border border-[#D4A84B]/20 rounded-md">
-                  <Quote className="w-8 h-8 text-[#D4A84B]/40 mb-4" />
+                <div className="p-8 bg-gradient-to-br from-[#B8D0C0]/10 to-transparent border border-[#B8D0C0]/20 rounded-md">
+                  <Quote className="w-8 h-8 text-[#B8D0C0]/40 mb-4" />
                   <p className="text-white/80 leading-relaxed mb-6 italic">
                     "{testimonial.quote}"
                   </p>
-                  <p className="text-[#D4A84B] text-sm font-medium">
+                  <p className="text-[#568F69] text-sm font-medium">
                     — {testimonial.author}
                   </p>
                 </div>
@@ -270,7 +270,7 @@ export default function Beverage() {
       <section className="py-32 bg-[#0F0F0F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection>
-            <div className="p-12 bg-gradient-to-br from-[#D4A84B]/10 to-transparent border border-[#D4A84B]/20 rounded-md">
+            <div className="p-12 bg-gradient-to-br from-[#B8D0C0]/10 to-transparent border border-[#B8D0C0]/20 rounded-md">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h2 className="text-2xl font-bold text-white mb-4">
@@ -283,7 +283,7 @@ export default function Beverage() {
                   <ul className="space-y-3 mb-8">
                     {["Event Catering", "Office Supply Programs", "Venue Partnerships", "Cloud Kitchen Collaboration"].map((item) => (
                       <li key={item} className="text-white/60 text-sm flex items-center gap-3">
-                        <span className="w-1.5 h-1.5 bg-[#D4A84B] rounded-full" />
+                        <span className="w-1.5 h-1.5 bg-[#B8D0C0] rounded-full" />
                         {item}
                       </li>
                     ))}
@@ -294,7 +294,7 @@ export default function Beverage() {
                     <motion.button
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="px-10 py-4 bg-[#D4A84B] text-black font-semibold rounded-md hover-elevate flex items-center gap-2 mx-auto lg:ml-auto lg:mr-0"
+                      className="px-10 py-4 bg-[#B8D0C0] text-black font-semibold rounded-md hover-elevate flex items-center gap-2 mx-auto lg:ml-auto lg:mr-0"
                       data-testid="button-become-partner"
                     >
                       Become a Partner

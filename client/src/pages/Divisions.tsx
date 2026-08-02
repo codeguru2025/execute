@@ -49,12 +49,12 @@ export default function Divisions() {
       <section className="py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl mb-20">
-            <span className="inline-block px-4 py-2 bg-[#D4A84B]/20 border border-[#D4A84B]/40 rounded-full text-[#D4A84B] text-sm font-medium tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-[#B8D0C0]/20 border border-[#B8D0C0]/40 rounded-full text-[#568F69] text-sm font-medium tracking-wide mb-6">
               Our Divisions
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-8">
               Three Pillars.<br />
-              <span className="text-[#D4A84B]">One Platform.</span>
+              <span className="text-[#B8D0C0]">One Platform.</span>
             </h1>
             <p className="text-lg text-white/70 leading-relaxed">
               Execute Group operates through three specialized divisions, each
@@ -84,13 +84,13 @@ export default function Divisions() {
                     <div className="relative p-8 lg:p-12">
                       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                         <div className="lg:col-span-1">
-                          <div className="p-3 bg-[#D4A84B]/10 rounded-md border border-[#D4A84B]/20 inline-block">
-                            <division.icon className="w-8 h-8 text-[#D4A84B]" />
+                          <div className="p-3 bg-[#B8D0C0]/10 rounded-md border border-[#B8D0C0]/20 inline-block">
+                            <division.icon className="w-8 h-8 text-[#B8D0C0]" />
                           </div>
                         </div>
                         
                         <div className="lg:col-span-7">
-                          <p className="text-[#D4A84B] text-xs tracking-wider uppercase mb-2">
+                          <p className="text-[#568F69] text-xs tracking-wider uppercase mb-2">
                             {division.pillar}
                           </p>
                           <h2 className="text-2xl font-bold text-white mb-3">
@@ -116,7 +116,7 @@ export default function Divisions() {
                         
                         <div className="lg:col-span-1 flex justify-end">
                           <ArrowRight
-                            className="w-6 h-6 text-white/60 group-hover:text-[#D4A84B] group-hover:translate-x-2 transition-all"
+                            className="w-6 h-6 text-white/60 group-hover:text-[#B8D0C0] group-hover:translate-x-2 transition-all"
                           />
                         </div>
                       </div>
@@ -134,7 +134,7 @@ export default function Divisions() {
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Three Pillars.<br />
-              <span className="text-[#D4A84B]">One Vision.</span>
+              <span className="text-[#B8D0C0]">One Vision.</span>
             </h2>
             <p className="text-white/60 mb-10 max-w-xl mx-auto">
               Technology & Growth to build businesses. Events & Travel to move people. 
@@ -145,7 +145,7 @@ export default function Divisions() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-10 py-4 bg-[#D4A84B] text-black font-semibold rounded-md hover-elevate"
+                className="px-10 py-4 bg-[#B8D0C0] text-black font-semibold rounded-md hover-elevate"
                 data-testid="button-partner-with-us"
               >
                 Partner With Us

@@ -80,11 +80,11 @@ export default function EventsTravel() {
         
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-20 relative z-10">
           <AnimatedSection className="max-w-3xl">
-            <span className="inline-block px-4 py-2 bg-[#D4A84B]/20 border border-[#D4A84B]/40 rounded-full text-[#D4A84B] text-sm font-medium tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-[#B8D0C0]/20 border border-[#B8D0C0]/40 rounded-full text-[#568F69] text-sm font-medium tracking-wide mb-6">
               Events, Travel & Tourism
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-8">
-              <span className="text-[#D4A84B]">Move</span> People.
+              <span className="text-[#B8D0C0]">Move</span> People.
             </h1>
             <p className="text-lg text-white/80 leading-relaxed">
               Facilitate travel, logistics, and physical experiences between
@@ -99,8 +99,8 @@ export default function EventsTravel() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <AnimatedSection key={stat.label} delay={index * 0.1}>
-                <div className="text-center p-6 border border-white/5 rounded-md hover:border-[#D4A84B]/30 transition-colors">
-                  <p className="text-4xl md:text-5xl font-bold text-[#D4A84B] mb-2">
+                <div className="text-center p-6 border border-white/5 rounded-md hover:border-[#B8D0C0]/30 transition-colors">
+                  <p className="text-4xl md:text-5xl font-bold text-[#B8D0C0] mb-2">
                     {stat.value}
                   </p>
                   <p className="text-sm text-white/60">{stat.label}</p>
@@ -115,15 +115,15 @@ export default function EventsTravel() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection className="mb-16">
             <h2 className="text-2xl font-bold text-white mb-4">Services</h2>
-            <div className="w-16 h-px bg-[#D4A84B]" />
+            <div className="w-16 h-px bg-[#B8D0C0]" />
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <AnimatedSection key={service.title} delay={index * 0.1}>
-                <div className="p-8 bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 rounded-md h-full hover:border-[#D4A84B]/30 transition-colors">
-                  <div className="p-3 bg-[#D4A84B]/10 rounded-md border border-[#D4A84B]/20 inline-block mb-6">
-                    <service.icon className="w-6 h-6 text-[#D4A84B]" />
+                <div className="p-8 bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 rounded-md h-full hover:border-[#B8D0C0]/30 transition-colors">
+                  <div className="p-3 bg-[#B8D0C0]/10 rounded-md border border-[#B8D0C0]/20 inline-block mb-6">
+                    <service.icon className="w-6 h-6 text-[#B8D0C0]" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-6">
                     {service.title}
@@ -134,7 +134,7 @@ export default function EventsTravel() {
                         key={item}
                         className="text-white/60 text-sm flex items-center gap-3"
                       >
-                        <span className="w-1.5 h-1.5 bg-[#D4A84B] rounded-full" />
+                        <span className="w-1.5 h-1.5 bg-[#B8D0C0] rounded-full" />
                         {item}
                       </li>
                     ))}
@@ -153,7 +153,7 @@ export default function EventsTravel() {
               <h2 className="text-3xl font-bold text-white mb-6">
                 The Africa ↔ Dubai Corridor
               </h2>
-              <div className="w-16 h-px bg-[#D4A84B] mb-8" />
+              <div className="w-16 h-px bg-[#B8D0C0] mb-8" />
               <div className="space-y-6 text-white/70 leading-relaxed">
                 <p>
                   We specialize in facilitating movement between African markets
@@ -170,7 +170,7 @@ export default function EventsTravel() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <div className="relative overflow-hidden rounded-md border border-[#D4A84B]/20">
+              <div className="relative overflow-hidden rounded-md border border-[#B8D0C0]/20">
                 <img 
                   src={travelLuxury} 
                   alt="Luxury Travel"
@@ -178,7 +178,7 @@ export default function EventsTravel() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-6 left-6">
-                  <Plane className="w-10 h-10 text-[#D4A84B]" />
+                  <Plane className="w-10 h-10 text-[#B8D0C0]" />
                   <p className="text-white/80 text-sm mt-2">Seamless Movement</p>
                 </div>
               </div>
@@ -191,7 +191,7 @@ export default function EventsTravel() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Planning an Event or <span className="text-[#D4A84B]">Trip</span>?
+              Planning an Event or <span className="text-[#B8D0C0]">Trip</span>?
             </h2>
             <p className="text-white/60 mb-10 max-w-xl mx-auto">
               Let us handle the logistics. From visa processing to event
@@ -201,7 +201,7 @@ export default function EventsTravel() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-10 py-4 bg-[#D4A84B] text-black font-semibold rounded-md hover-elevate flex items-center gap-2 mx-auto"
+                className="px-10 py-4 bg-[#B8D0C0] text-black font-semibold rounded-md hover-elevate flex items-center gap-2 mx-auto"
                 data-testid="button-plan-with-us"
               >
                 Plan With Us

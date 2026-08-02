@@ -76,14 +76,14 @@ export default function Home() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="mb-8"
             >
-              <span className="inline-block px-4 py-2 bg-[#D4A84B]/20 border border-[#D4A84B]/40 rounded-full text-[#D4A84B] text-sm font-medium tracking-wide">
+              <span className="inline-block px-4 py-2 bg-[#B8D0C0]/20 border border-[#B8D0C0]/40 rounded-full text-[#568F69] text-sm font-medium tracking-wide">
                 Technology • Events • Beverage
               </span>
             </motion.div>
             
             <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold text-white tracking-tight mb-8">
               <span className="block">Sip. Spark.</span>
-              <span className="text-[#D4A84B]">Execute.</span>
+              <span className="text-[#B8D0C0]">Execute.</span>
             </h1>
             
             <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-12">
@@ -97,7 +97,7 @@ export default function Home() {
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="px-8 py-4 bg-[#D4A84B] text-black font-semibold rounded-md hover-elevate flex items-center gap-2"
+                  className="px-8 py-4 bg-[#B8D0C0] text-black font-semibold rounded-md hover-elevate flex items-center gap-2"
                   data-testid="button-explore-divisions"
                 >
                   Explore Divisions
@@ -129,7 +129,7 @@ export default function Home() {
             transition={{ repeat: Infinity, duration: 2 }}
             className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2"
           >
-            <motion.div className="w-1 h-2 bg-[#D4A84B] rounded-full" />
+            <motion.div className="w-1 h-2 bg-[#B8D0C0] rounded-full" />
           </motion.div>
         </motion.div>
       </section>
@@ -140,13 +140,13 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               What We Enable
             </h2>
-            <div className="w-16 h-px bg-[#D4A84B] mx-auto" />
+            <div className="w-16 h-px bg-[#B8D0C0] mx-auto" />
           </AnimatedSection>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {enablements.map((item, index) => (
               <AnimatedSection key={item.title} delay={index * 0.1}>
-                <div className="group relative overflow-hidden rounded-md border border-white/5 hover:border-[#D4A84B]/30 transition-colors">
+                <div className="group relative overflow-hidden rounded-md border border-white/5 hover:border-[#B8D0C0]/30 transition-colors">
                   <div className="aspect-[4/3] overflow-hidden">
                     <img 
                       src={item.image} 
@@ -193,8 +193,8 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                     <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                      <pillar.icon className="w-10 h-10 text-[#D4A84B] mb-4" />
-                      <p className="text-[#D4A84B] text-xs tracking-wider uppercase mb-2">
+                      <pillar.icon className="w-10 h-10 text-[#B8D0C0] mb-4" />
+                      <p className="text-[#568F69] text-xs tracking-wider uppercase mb-2">
                         {pillar.subtitle}
                       </p>
                       <h3 className="text-2xl font-bold text-white mb-3">
@@ -203,7 +203,7 @@ export default function Home() {
                       <p className="text-white/70 text-sm leading-relaxed mb-4">
                         {pillar.description}
                       </p>
-                      <span className="text-white text-sm flex items-center gap-2 group-hover:text-[#D4A84B] transition-colors">
+                      <span className="text-white text-sm flex items-center gap-2 group-hover:text-[#568F69] transition-colors">
                         Learn More
                         <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                       </span>
@@ -220,7 +220,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection direction="left">
-              <Globe className="w-16 h-16 text-[#D4A84B] mb-8" />
+              <Globe className="w-16 h-16 text-[#B8D0C0] mb-8" />
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Africa ↔ Dubai Bridge
               </h2>
@@ -234,7 +234,7 @@ export default function Home() {
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="px-6 py-3 border border-[#D4A84B] text-[#D4A84B] font-medium rounded-md hover:bg-[#D4A84B] hover:text-black transition-all"
+                  className="px-6 py-3 border border-[#B8D0C0] text-[#B8D0C0] font-medium rounded-md hover:bg-[#B8D0C0] hover:text-black transition-all"
                   data-testid="button-learn-more-bridge"
                 >
                   Learn Our Story
@@ -244,12 +244,12 @@ export default function Home() {
 
             <AnimatedSection direction="right" delay={0.2}>
               <div className="relative">
-                <div className="aspect-square bg-gradient-to-br from-[#D4A84B]/20 to-transparent rounded-md flex items-center justify-center border border-[#D4A84B]/10">
+                <div className="aspect-square bg-gradient-to-br from-[#B8D0C0]/20 to-transparent rounded-md flex items-center justify-center border border-[#B8D0C0]/10">
                   <div className="text-center">
                     <p className="text-6xl md:text-8xl font-bold text-white/10">
                       AF
                     </p>
-                    <div className="w-20 h-px bg-[#D4A84B] mx-auto my-4" />
+                    <div className="w-20 h-px bg-[#B8D0C0] mx-auto my-4" />
                     <p className="text-6xl md:text-8xl font-bold text-white/10">
                       UAE
                     </p>
@@ -285,7 +285,7 @@ export default function Home() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-10 py-4 bg-[#D4A84B] text-black font-semibold rounded-md hover-elevate text-lg"
+                className="px-10 py-4 bg-[#B8D0C0] text-black font-semibold rounded-md hover-elevate text-lg"
                 data-testid="button-get-started"
               >
                 Get Started
