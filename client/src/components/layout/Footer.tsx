@@ -80,7 +80,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-[#BDBDBD]/60">
               © {new Date().getFullYear()} Execute Group. All rights reserved. A product of{" "}
-              <a href="https://chibikhulu.com/portfolio/execute-group" target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-white">
+              <a href="https://chibi-khulu.com/portfolio/execute-group" target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-white">
                 Chibikhulu
               </a>
             </p>
