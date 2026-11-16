@@ -49,7 +49,7 @@ const divisions = [
 export default function Contact() {
   useSEO({
     title: "Contact",
-    description: "Get in touch with Execute Group. Whether you're building a business, planning travel, or seeking premium experiences—reach out and let's discuss how we can help.",
+    description: "Get in touch with Execute Group. Whether you're building a business, planning travel, or seeking premium experiences, reach out and let's discuss how we can help.",
   });
 
   const { toast } = useToast();

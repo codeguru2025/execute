@@ -61,7 +61,7 @@ const testimonials = [
 export default function About() {
   useSEO({
     title: "About Us",
-    description: "Learn about Execute Group's story, mission, vision, and founders. A Dubai-registered platform enabling business between Africa and the UAE.",
+    description: "Learn about Execute Group's story, mission, vision, and founders. A Dubai registered platform enabling business between Africa and the UAE.",
   });
 
   return (

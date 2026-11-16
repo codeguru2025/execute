@@ -3,6 +3,8 @@ import { useEffect } from "react";
 interface SEOProps {
   title: string;
   description: string;
+  /** For the page not found: asks search engines not to list it */
+  noIndex?: boolean;
 }
 
 function getOrCreateMeta(name: string, property?: string): HTMLMetaElement {
@@ -28,7 +30,7 @@ function getOrCreateMeta(name: string, property?: string): HTMLMetaElement {
   return meta;
 }
 
-export function useSEO({ title, description }: SEOProps) {
+export function useSEO({ title, description, noIndex }: SEOProps) {
   useEffect(() => {
     const fullTitle = `${title} | Execute Group`;
     
@@ -46,8 +48,19 @@ export function useSEO({ title, description }: SEOProps) {
     const ogType = getOrCreateMeta("", "og:type");
     ogType.setAttribute("content", "website");
     
+    // The page's one true address: no query, no #section, so each page is listed once
+    const url = window.location.origin + window.location.pathname;
     const ogUrl = getOrCreateMeta("", "og:url");
-    ogUrl.setAttribute("content", window.location.href);
+    ogUrl.setAttribute("content", url);
+    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    canonical.href = url;
+    const robots = getOrCreateMeta("robots");
+    robots.setAttribute("content", noIndex ? "noindex" : "index, follow");
     
     const twitterTitle = getOrCreateMeta("twitter:title");
     twitterTitle.setAttribute("content", fullTitle);
@@ -57,5 +70,5 @@ export function useSEO({ title, description }: SEOProps) {
     
     const twitterCard = getOrCreateMeta("twitter:card");
     twitterCard.setAttribute("content", "summary_large_image");
-  }, [title, description]);
+  }, [title, description, noIndex]);
 }

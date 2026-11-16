@@ -50,7 +50,7 @@ const enablements = [
 export default function Home() {
   useSEO({
     title: "Built to Execute",
-    description: "Execute Group offers Technology & Growth, Events & Travel, and Execute Beverage — helping individuals and companies connect between Africa and the UAE.",
+    description: "Execute Group offers Technology and Growth, Events and Travel, and Execute Beverage, helping individuals and companies connect between Africa and the UAE.",
   });
 
   return (
