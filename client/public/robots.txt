@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://executeuae.netlify.app/sitemap.xml
